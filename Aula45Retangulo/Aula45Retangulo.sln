@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32516.85
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aula45Retangulo", "Aula45Retangulo\Aula45Retangulo.csproj", "{CC4EF026-E196-4E32-87F0-49F27FBBEDCD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CC4EF026-E196-4E32-87F0-49F27FBBEDCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC4EF026-E196-4E32-87F0-49F27FBBEDCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC4EF026-E196-4E32-87F0-49F27FBBEDCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC4EF026-E196-4E32-87F0-49F27FBBEDCD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3D993C6D-BDCC-492B-81E2-BF2DE1561A35}
+	EndGlobalSection
+EndGlobal
