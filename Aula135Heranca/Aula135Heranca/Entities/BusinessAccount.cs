@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Aula135Heranca.Entities
+﻿namespace Aula135Heranca.Entities
 {
     public class BusinessAccount : Account
     {
