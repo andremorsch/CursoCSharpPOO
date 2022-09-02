@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Aula142Exercicio.Entities
+﻿namespace Aula142Exercicio.Entities
 {
     public class Product
     {
@@ -19,7 +15,7 @@ namespace Aula142Exercicio.Entities
             Price = price;
         }
 
-        public string priceTag()
+        public virtual string PriceTag()
         {
             return $"{Name} ${Price}";
         }
