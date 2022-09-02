@@ -17,7 +17,7 @@
 
         public virtual string PriceTag()
         {
-            return $"{Name} ${Price}";
+            return $"{Name} ${Price.ToString("F2")}";
         }
     }
 }
