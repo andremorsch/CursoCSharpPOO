@@ -1,6 +1,6 @@
 ﻿namespace Aula135Heranca.Entities
 {
-    public class BusinessAccount : Account
+    class BusinessAccount : Account
     {
         public double LoanLimit { get; set; }
 
