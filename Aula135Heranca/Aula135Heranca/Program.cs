@@ -68,7 +68,7 @@ namespace Aula135Heranca
                 sum += account.Balance;
             }
 
-            Console.WriteLine($"Total balance: {sum.ToString("F2")}");
+            Console.WriteLine($"Total balance: {sum:F2}");
 
             foreach (Account account in list)
             {
@@ -77,7 +77,7 @@ namespace Aula135Heranca
 
             foreach (Account account in list)
             {
-                Console.WriteLine($"Update balance for {account.Number}: {account.Balance.ToString("F2")}");
+                Console.WriteLine($"Update balance for {account.Number}: {account.Balance:F2}");
             }
         }
     }
