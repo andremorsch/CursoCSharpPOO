@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Aula135Heranca.Entities
 {
-    public class SavingsAccount : Account
+    class SavingsAccount : Account
     {
         public double InterestRate { get; set; }
 
