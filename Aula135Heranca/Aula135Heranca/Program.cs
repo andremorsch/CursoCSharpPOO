@@ -1,5 +1,6 @@
 ﻿using Aula135Heranca.Entities;
 using System;
+using System.Collections.Generic;
 
 namespace Aula135Heranca
 {
@@ -42,14 +43,42 @@ namespace Aula135Heranca
 
             // Aula 137
 
-            Account acc1 = new Account(1001, "Alex", 500);
-            Account acc2 = new SavingsAccount(1002, "Anna", 500, 0.01);
+            //Account acc1 = new Account(1001, "Alex", 500);
+            //Account acc2 = new SavingsAccount(1002, "Anna", 500, 0.01);
 
-            acc1.Withdraw(10);
-            acc2.Withdraw(10);
+            //acc1.Withdraw(10);
+            //acc2.Withdraw(10);
 
-            Console.WriteLine(acc1.Balance);
-            Console.WriteLine(acc2.Balance);
+            //Console.WriteLine(acc1.Balance);
+            //Console.WriteLine(acc2.Balance);
+
+            // aula 142
+
+            List<Account> list = new List<Account>();
+
+            list.Add(new SavingsAccount(1001, "Alex", 500, 0.01));
+            list.Add(new BusinessAccount(1002, "Maria", 500, 400));
+            list.Add(new SavingsAccount(1003, "Bob", 500, 0.01));
+            list.Add(new BusinessAccount(1004, "Anna", 500, 500));
+
+            double sum = 0;
+
+            foreach (Account account in list)
+            {
+                sum += account.Balance;
+            }
+
+            Console.WriteLine($"Total balance: {sum.ToString("F2")}");
+
+            foreach (Account account in list)
+            {
+                account.Withdraw(10);
+            }
+
+            foreach (Account account in list)
+            {
+                Console.WriteLine($"Update balance for {account.Number}: {account.Balance.ToString("F2")}");
+            }
         }
     }
 }
