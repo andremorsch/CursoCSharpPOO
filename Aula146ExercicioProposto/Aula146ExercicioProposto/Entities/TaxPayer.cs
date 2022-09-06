@@ -14,5 +14,7 @@ namespace Aula146ExercicioProposto.Entities
             Name = name;
             AnualIncome = anualIncome;
         }
+
+        public abstract double Tax();
     }
 }
