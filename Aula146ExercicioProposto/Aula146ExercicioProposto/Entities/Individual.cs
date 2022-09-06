@@ -12,5 +12,21 @@ namespace Aula146ExercicioProposto.Entities
         {
             HealthExpenditures = healthExpenditures;
         }
+
+        public override double Tax()
+        {
+            if (AnualIncome > 20000)
+            {
+                double tax = AnualIncome * 0.15;
+                tax -= HealthExpenditures / 2;
+                return tax;
+            }
+            else
+            {
+                double tax = AnualIncome * 0.25;
+                tax -= HealthExpenditures / 2;
+                return tax;
+            }
+        }
     }
 }
