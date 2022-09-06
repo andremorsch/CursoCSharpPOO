@@ -15,7 +15,7 @@ namespace Aula146ExercicioProposto.Entities
 
         public override double Tax()
         {
-            if (AnualIncome > 20000)
+            if (AnualIncome < 20000.0)
             {
                 double tax = AnualIncome * 0.15;
                 tax -= HealthExpenditures / 2;
