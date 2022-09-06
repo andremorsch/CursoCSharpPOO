@@ -12,5 +12,17 @@ namespace Aula146ExercicioProposto.Entities
         {
             NumberOfEmployees = numberOfEmployees;
         }
+
+        public override double Tax()
+        {
+            if (NumberOfEmployees <= 10)
+            {
+                return AnualIncome * 0.16;
+            }
+            else
+            {
+                return AnualIncome * 0.14;
+            }
+        }
     }
 }
