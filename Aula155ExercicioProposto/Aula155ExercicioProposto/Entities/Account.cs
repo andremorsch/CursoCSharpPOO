@@ -22,5 +22,15 @@ namespace Aula155ExercicioProposto.Entities
             Balance = balance;
             WithdrawLimit = withdrawLimit;
         }
+
+        public void Deposit(double value)
+        {
+            Balance += value;
+        }
+
+        public void Withdraw(double value)
+        {
+            Balance -= value;
+        }
     }
 }
