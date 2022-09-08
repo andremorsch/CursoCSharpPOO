@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Aula155ExercicioProposto.Entities.Exceptions;
 
 namespace Aula155ExercicioProposto.Entities
 {
@@ -30,6 +28,16 @@ namespace Aula155ExercicioProposto.Entities
 
         public void Withdraw(double value)
         {
+            if (value > WithdrawLimit)
+            {
+                throw new DomainException("The amount exceeds withdraw limit");
+            }
+
+            if (value > Balance)
+            {
+                throw new DomainException("Not enough balance");
+            }
+
             Balance -= value;
         }
     }
