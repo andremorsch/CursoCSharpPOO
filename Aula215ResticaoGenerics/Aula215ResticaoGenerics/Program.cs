@@ -28,7 +28,7 @@ namespace Aula215ResticaoGenerics
 
             Product max = calculationService.Max(list);
 
-            Console.WriteLine("Max:");
+            Console.WriteLine("Most expensive:");
             Console.WriteLine(max);
         }
     }
